@@ -1,0 +1,9 @@
+input_data/
+meme_pics/
+output/
+.env
+venv/
+__pycache__/
+.DS_Store
+.idea/
+
