@@ -33,9 +33,11 @@ The report includes:
 A fun way to celebrate and reflect on your Music League season with data-driven insights, humor, and personalized trophies.
 
 ---
-## 🖼️ Preview
+## 📄 Sample Report
 
-![Music League Wrapped Example](output/sample_report_page.png)
+Download a full example report from the project:
+
+👉 [Download sample_report.zip](https://github.com/mattlally/MusicLeagueWrapped/raw/main/sample_report.zip)
 
 ---
 ## ⚙️ How to Run Locally
