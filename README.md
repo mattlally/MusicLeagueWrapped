@@ -92,5 +92,7 @@ Drop your meme images into the meme_pics/ folder. You will need to create the me
 python main.py
 ```
 
+### 7. Check out your report!
+
 PDF report will be saved in the output/ folder.
 
