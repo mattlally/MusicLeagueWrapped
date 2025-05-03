@@ -47,21 +47,26 @@ Download a full example report from the project:
 ```bash
 git clone https://github.com/mattlally/MusicLeagueWrapped.git
 cd MusicLeagueWrapped
+```
 
 ### 2. Set up your environment
+```bash
 python3 -m venv venv
 source venv/bin/activate  # or `source venv/bin/activate.fish` / `venv\Scripts\activate` on Windows
 pip install -r requirements.txt
+```
 
 ### 3. Add your Spotify credentials (create a .env file at the root with:)
-SPOTIPY_CLIENT_ID=your_id
-SPOTIPY_CLIENT_SECRET=your_secret
-SPOTIPY_REDIRECT_URI=http://localhost:8888/callback
+```env
+SPOTIFY_CLIENT_ID=your_id
+SPOTIFY_CLIENT_SECRET=your_secret
+```
 
-### 4. Add your Music League CSVs (drop your .csv exports into the input_data/ folder)
-
-### 5. Run it!
+### 4. Add your Music League CSVs
+Drop your .csv exports into the input_data/ folder. You will need to create the input_data/ folder if it doesn't exist.
+```bash
 python main.py
+```
 
 PDF report will be saved in the output/ folder.
 
