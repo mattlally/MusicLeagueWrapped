@@ -64,6 +64,30 @@ SPOTIFY_CLIENT_SECRET=your_secret
 
 ### 4. Add your Music League CSVs
 Drop your .csv exports into the input_data/ folder. You will need to create the input_data/ folder if it doesn't exist.
+
+### 5. Add your memes (optional)
+Drop your meme images into the meme_pics/ folder. You will need to create the meme_pics/ folder if it doesn't exist. Use the following naming convention for the images:
+
+
+| Meme Category                     | Image Name           |
+| --------------------------------- | -------------------- |
+| Most Popular                      | winner.png           |
+| Most Likely to Lose Soo Badly Oof | loser.png            |
+| Most Likely to Be Average as Hell | avg.png              |
+| Best Performance                  | performance.png      |
+| Chatty Cathy                      | chatty.png           |
+| The Author                        | author.png           |
+| Crowd Pleaser                     | crowd_pleasers.png   |
+| Trend Setter                      | trendy.png           |
+| Most Compatible                   | most_compatible.png  |
+| Least Compatible                  | least_compatible.png |
+| Most Similar                      | most_similar.png     |
+| Least Similar                     | least_similar.png    |
+| Most Likely to Vote First         | early_vote.png       |
+| Most Likely to Vote Last          | late_vote.png        |
+
+
+### 6. Run it!
 ```bash
 python main.py
 ```
