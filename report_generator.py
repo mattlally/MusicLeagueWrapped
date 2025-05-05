@@ -13,6 +13,10 @@ from data_processing import (
 from visuals import create_podium_visual, plot_popularity_chart
 from spotify_api import get_client_credentials_token
 
+# Constants
+report_title = "Music League"
+report_subtitle = "Wrapped Analysis"
+
 
 def generate_pdf(base_path):
     """Generates the full Music League report PDF."""
@@ -108,7 +112,7 @@ def generate_pdf(base_path):
 
     # Add Cover Page with color styling
     doc.append(Paragraph(
-        "<font color='black'>IOLA Jukebox - Season 1</font><br/><br/><font color='#1DB954'>Wrapped Analysis</font>",
+        f"<font color='black'>{report_title}</font><br/><br/><font color='#1DB954'>{report_subtitle}</font>",
         styles['Title']
     ))
     doc.append(Spacer(1, 50))  # Add space before image

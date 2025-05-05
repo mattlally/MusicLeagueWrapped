@@ -47,21 +47,52 @@ Download a full example report from the project:
 ```bash
 git clone https://github.com/mattlally/MusicLeagueWrapped.git
 cd MusicLeagueWrapped
+```
 
 ### 2. Set up your environment
+```bash
 python3 -m venv venv
 source venv/bin/activate  # or `source venv/bin/activate.fish` / `venv\Scripts\activate` on Windows
 pip install -r requirements.txt
+```
 
 ### 3. Add your Spotify credentials (create a .env file at the root with:)
-SPOTIPY_CLIENT_ID=your_id
-SPOTIPY_CLIENT_SECRET=your_secret
-SPOTIPY_REDIRECT_URI=http://localhost:8888/callback
+```env
+SPOTIFY_CLIENT_ID=your_id
+SPOTIFY_CLIENT_SECRET=your_secret
+```
 
-### 4. Add your Music League CSVs (drop your .csv exports into the input_data/ folder)
+### 4. Add your Music League CSVs
+Drop your .csv exports into the input_data/ folder. You will need to create the input_data/ folder if it doesn't exist.
 
-### 5. Run it!
+### 5. Add your memes (optional)
+Drop your meme images into the meme_pics/ folder. You will need to create the meme_pics/ folder if it doesn't exist. Use the following naming convention for the images:
+
+
+| Meme Category                     | Image Name           |
+| --------------------------------- | -------------------- |
+| Most Popular                      | winner.png           |
+| Most Likely to Lose Soo Badly Oof | loser.png            |
+| Most Likely to Be Average as Hell | avg.png              |
+| Best Performance                  | performance.png      |
+| Chatty Cathy                      | chatty.png           |
+| The Author                        | author.png           |
+| Crowd Pleaser                     | crowd_pleasers.png   |
+| Trend Setter                      | trendy.png           |
+| Most Compatible                   | most_compatible.png  |
+| Least Compatible                  | least_compatible.png |
+| Most Similar                      | most_similar.png     |
+| Least Similar                     | least_similar.png    |
+| Most Likely to Vote First         | early_vote.png       |
+| Most Likely to Vote Last          | late_vote.png        |
+
+
+### 6. Run it!
+```bash
 python main.py
+```
+
+### 7. Check out your report!
 
 PDF report will be saved in the output/ folder.
 
